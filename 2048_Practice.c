@@ -309,7 +309,7 @@ void Move(int GameArray[4][4]) {
 	switch (ch)
 	{
 	case 'W':
-		if(GameArray[0][2]* GameArray[0][3]* GameArray[0][1]* GameArray[0][0]==0)
+		/*if(GameArray[0][2]* GameArray[0][3]* GameArray[0][1]* GameArray[0][0]==0)*/
 		{
 		MoveUp(GameArray);
 		SumUp(GameArray);
@@ -318,7 +318,7 @@ void Move(int GameArray[4][4]) {
 		}
 		break;
 	case 'w':
-		if (GameArray[0][2] * GameArray[0][3] * GameArray[0][1] * GameArray[0][0] == 0)
+		/*if (GameArray[0][2] * GameArray[0][3] * GameArray[0][1] * GameArray[0][0] == 0)*/
 		{
 			MoveUp(GameArray);
 			SumUp(GameArray);
@@ -327,7 +327,7 @@ void Move(int GameArray[4][4]) {
 		}
 		break;
 	case 'A':
-		if(GameArray[3][0] * GameArray[2][0] * GameArray[1][0] * GameArray[0][0] == 0)
+		/*if(GameArray[3][0] * GameArray[2][0] * GameArray[1][0] * GameArray[0][0] == 0)*/
 		{ 
 		MoveLeft(GameArray);
 		SumLeft(GameArray);
@@ -336,7 +336,7 @@ void Move(int GameArray[4][4]) {
 		}
 		break;
 	case 'a':
-		if (GameArray[3][0] * GameArray[2][0] * GameArray[1][0] * GameArray[0][0] == 0)
+		/*if (GameArray[3][0] * GameArray[2][0] * GameArray[1][0] * GameArray[0][0] == 0)*/
 		{
 			MoveLeft(GameArray);
 			SumLeft(GameArray);
@@ -345,7 +345,7 @@ void Move(int GameArray[4][4]) {
 		}
 		break;
 	case 'S':
-		if (GameArray[3][2] * GameArray[3][3] * GameArray[3][1] * GameArray[3][0] == 0)
+		/*if (GameArray[3][2] * GameArray[3][3] * GameArray[3][1] * GameArray[3][0] == 0)*/
 		{
 			MoveDown(GameArray);
 			SumDown(GameArray);
@@ -354,7 +354,7 @@ void Move(int GameArray[4][4]) {
 		}
 		break;
 	case 's':
-		if (GameArray[3][2] * GameArray[3][3] * GameArray[3][1] * GameArray[3][0] == 0)
+		/* (GameArray[3][2] * GameArray[3][3] * GameArray[3][1] * GameArray[3][0] == 0)*/
 		{
 			MoveDown(GameArray);
 			SumDown(GameArray);
@@ -363,7 +363,7 @@ void Move(int GameArray[4][4]) {
 		}
 		break;
 	case 'D':
-		if (GameArray[3][3] * GameArray[2][3] * GameArray[1][3] * GameArray[0][3] == 0)
+		/* if (GameArray[3][3] * GameArray[2][3] * GameArray[1][3] * GameArray[0][3] == 0)*/
 		{
 			MoveRight(GameArray);
 			SumRight(GameArray);
@@ -372,7 +372,7 @@ void Move(int GameArray[4][4]) {
 		}
 		break;
 	case 'd':
-		if (GameArray[3][3] * GameArray[2][3] * GameArray[1][3] * GameArray[0][3] == 0)
+		/* if (GameArray[3][3] * GameArray[2][3] * GameArray[1][3] * GameArray[0][3] == 0)*/
 		{
 			MoveRight(GameArray);
 			SumRight(GameArray);
