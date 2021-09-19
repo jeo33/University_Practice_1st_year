@@ -2,11 +2,10 @@
 #include<cstdio>
 #include<cstring>
 using namespace std;
-
+void displayfunction(char *p,int l);
 int main()
 {
-    string EnterString[80];
-
+    char EnterString[80];
     char *start,*finish;
     int lenth;
     char t;
@@ -24,9 +23,15 @@ int main()
     start++;
     finish--;
 }
-for(int i=0;i<lenth;i++)
-    cout<<EnterString[i];
-
+displayfunction(EnterString,lenth);
 
     return 0;
+}
+
+void displayfunction(char *p,int l)
+{
+    for(int i=0;i<l;i++)
+    {
+        cout<<p[i];
+    }
 }
