@@ -1,0 +1,138 @@
+#include<iostream>
+#include<string>
+void initializeMap();
+void printMap();
+const int size = 10;
+int GameMap[size][size];
+static struct position
+{
+	int x =	3;
+	int y = 1;
+} current;
+void up();
+void down();
+void left();
+void right();
+int flag=0,step=0;
+int main()
+{
+	
+	std::string inputString;
+	char ch;
+	int i = 0;
+	initializeMap();
+	std::cin >> inputString;
+	std::cout << std :: endl;
+	while(i< inputString.length())
+	{
+		
+		switch (inputString[i])
+		{
+		case 'w':
+			up();
+			printMap();
+			break;
+		case 'a':
+			left();
+			printMap();
+			break;
+		case 's':
+			down();
+			printMap();
+			break;
+		case 'd':
+			right();
+			printMap();
+			break;
+		}
+	std::cout << i<<" "<<inputString[i]<<" is the current \n";
+		if (GameMap[current.x][current.y] < 10)i++;
+		else
+		{
+			flag = 1;
+			break;
+		}
+		
+
+	}
+	GameMap[current.x][current.y] = 99;
+	if(flag==1)std::cout << "\nBad robot!\n\n";
+	printMap();
+	std::cout << "\n" << "We took "<< step<<"steps\n";
+
+
+}
+
+void up()
+{
+	if (current.x != 0) {
+		current.x--;
+		GameMap[current.x][current.y]++;
+		step++;
+	}
+	
+}
+	
+void down()
+{
+	if (current.x != 9) {
+		current.x++;
+		GameMap[current.x][current.y]++;
+		step++;
+	}
+	
+}
+
+void left()
+{
+	if (current.y != 0)
+	{
+		current.y--;
+		GameMap[current.x][current.y]++;
+		step++;
+	}
+
+}
+
+void right()
+{
+	if (current.y != 9) {
+		current.y++;
+		GameMap[current.x][current.y]++;
+		step++;
+	}
+	
+}
+
+
+
+void initializeMap()
+{
+	for (int i = 0; i < size; i++)
+	{
+		for (int j = 0; j < size; j++)
+		{
+			GameMap[i][j] = 0;
+		}
+
+	}
+}
+
+
+
+void printMap()
+{
+	for (int i = 0; i < size; i++)
+	{
+		for (int j = 0; j < size; j++)
+		{
+			if (i==3&&j==1)std::cout << "* ";
+			else if (GameMap[i][j] == 10)std::cout << "X ";
+			else if (GameMap[i][j] == 99 )std::cout << "R ";
+			else if (GameMap[i][j] != 0)std::cout << GameMap[i][j]<<" ";
+			else std::cout << ". ";
+		}
+		std::cout << std::endl;
+	}
+}
+
