@@ -1,0 +1,4 @@
+﻿  Assignment2.cpp
+G:\visual in lab\Assignment2\Assignment2\Assignment2.cpp(16,11): warning C4018: '<': signed/unsigned mismatch
+G:\visual in lab\Assignment2\Assignment2\Assignment2.cpp(11,7): warning C4101: 'ch': unreferenced local variable
+  Assignment2.vcxproj -> G:\visual in lab\Assignment2\Debug\Assignment2.exe
