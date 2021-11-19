@@ -1,0 +1,42 @@
+# depslib dependency file v1.0
+1637287475 source:c:\users\zsy11\desktop\test\test\33\assignment3\main.cpp
+	<iostream>
+	<vector>
+	<string>
+	<math.h>
+	"line.h"
+	"number.h"
+	"border.h"
+
+1637285958 source:c:\users\zsy11\desktop\test\test\33\assignment3\line.cpp
+	"line.h"
+	<vector>
+	<iostream>
+
+1637284804 c:\users\zsy11\desktop\test\test\33\assignment3\line.h
+	<vector>
+	<string>
+
+1637261915 c:\users\zsy11\desktop\test\test\33\assignment3\line.cpp
+	"line.h"
+	<vector>
+
+1637287058 source:c:\users\zsy11\desktop\test\test\33\assignment3\border.cpp
+	"border.h"
+	<vector>
+	<iostream>
+
+1637286480 c:\users\zsy11\desktop\test\test\33\assignment3\border.h
+	<vector>
+	<iostream>
+
+1637287058 c:\users\zsy11\desktop\test\test\33\assignment3\number.h
+	<vector>
+	<iostream>
+
+1637287566 source:c:\users\zsy11\desktop\test\test\33\assignment3\number.cpp
+	"number.h"
+	<vector>
+	<iostream>
+	<math.h>
+
