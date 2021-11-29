@@ -1,0 +1,41 @@
+#include <iostream>
+#include<fstream>
+#include<string>
+#include<vector>
+#include"TA.h"
+using namespace std;
+
+int main()
+{   vector<TA> FileContent;
+    string temp;
+    int num;
+    ifstream myfile("TAs.txt");
+    while(getline(myfile,temp))
+    {
+        TA X(temp);
+        FileContent.push_back(X);
+    }
+    myfile.close();
+    FileContent.erase(FileContent.begin());
+
+    ofstream writefile("TAs.txt");
+   for(auto i:FileContent)
+    {
+        writefile<<i.all<<endl;;
+    }
+
+    myfile.close();
+    ifstream xx("TAs.txt");
+
+    while(getline(xx,temp))
+    {
+        TA X(temp);
+        FileContent.push_back(X);
+    }
+    xx.close();
+
+    return 0;
+}
+
+
+
