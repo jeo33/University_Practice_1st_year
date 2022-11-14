@@ -1,0 +1,53 @@
+package coen352Bonus;
+
+class Solution {
+    public int lengthOfLongestSubstring(String s) {
+        String ans="";
+        int count=0;
+        int maxcount=0;
+        for(int j=0;j<s.length();j++)
+        {
+            count=0;
+            ans="";
+            System.out.println();
+            System.out.println("j: "+j);
+             for(int i=j;i<s.length();i++)
+            {    
+
+                 System.out.println("i: "+i);
+                        {
+                            if(!check(ans,s.charAt(i)))
+                            {
+                                ans=ans+s.charAt(i);
+                                count++;
+                                System.out.println("ans :"+ans);
+                            }
+                            else
+                            {
+                            
+                            System.out.println(ans);
+                            count=1;
+                            
+                            }
+                            if(count>maxcount) maxcount=count;
+
+                        }
+            }
+        }
+        if(count>maxcount) maxcount=count;
+        if(s.length()==1)maxcount=1;
+
+        return maxcount;
+        
+}
+
+public boolean check(String x,char y)
+    {
+            for(int i=0;i<x.length();i++)
+        {
+            if(y==x.charAt(i))return true;
+            
+        }
+            return false;
+    }
+}
